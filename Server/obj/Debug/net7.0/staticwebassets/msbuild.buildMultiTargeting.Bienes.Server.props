@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Bienes.Server.props" />
+</Project>

@@ -1,0 +1,27 @@
+@page "/Diseño" 
+<h1>Iniciar sesión</h1>
+
+
+   <th>Correo</th>
+   <input type="text">
+   <th>Contraseña</th>
+   <input type="password">
+   <label class="btn btn-primary"@onclick="Regis">Registrarse</label>
+   <br>
+   <br>
+   <button class="btn btn-primary"@onclick="Registrar">Acceder</button>
+@code
+{
+
+public void Registrar(){
+
+    Cambio.NavigateTo("/Vista");
+
+}
+public void Regis(){
+
+    Cambio.NavigateTo("/Registro");
+
+}
+
+}

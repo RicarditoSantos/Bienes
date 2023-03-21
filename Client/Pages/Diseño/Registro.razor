@@ -1,0 +1,19 @@
+@page "/Diseño"
+
+<PageTitle>Registro</PageTitle>
+<h1>Registro</h1>
+
+<h3>Nombre Completo</h3>
+<input type="text">
+<h3>Correo </h3>
+<input type="text">
+<h3>Contraseña</h3>
+<input type="password">
+<br>
+<button class="btn btn-primary"@onclick="Inicio">Guardar</button>
+<button class="btn btn-primary"@onclick="Inicio">Salir</button>
+@code{
+    public void Inicio(){
+    Cambio.NavigateTo("/Login");
+}
+}
